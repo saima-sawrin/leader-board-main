@@ -12,12 +12,13 @@ body{
     display: flex;
     background-color: #562EFF;
     justify-content: space-around;
+
     
 }
 .ref{
     display: grid;
     grid-template-columns: repeat(4 , 1fr);
-    grid-column-gap: 5px;
+    grid-column-gap: 7px;
     text-align: center;
     justify-content: center;
     align-items: center;
@@ -33,6 +34,9 @@ body{
 .profile{
     height: 51px;
     width: 51px;
+}
+.icon{
+    column-gap: 5px;
 }
  .icon img{
     height: 48px;
@@ -137,6 +141,7 @@ main{
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         flex-direction: column;
+        column-gap:  10px;
     }
 
 
@@ -164,6 +169,7 @@ main{
    */
    padding-left: 20px;
    padding-right:20px;
+   
 
 }
 
