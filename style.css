@@ -97,6 +97,13 @@ main{
 }
 
 /* Latest Courses Section started */
+.courses{
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    
+
+}
 .Latest{
     background-color: white;
 }
@@ -109,6 +116,15 @@ main{
     font-family: 'Roboto';
     font-weight: 500;
     font-size: 20.0336px;
+}
+.course{
+    background-color:#FFFFFF;
+    border-radius: 5px;
+    filter: drop-shadow(0px 5.34229px 13.3557px rgba(0, 0, 0, 0.05));
+    height: 269.7856750488281px;
+    width: 252.4232177734375px;
+
+
 }
 
 .course-info p{
@@ -137,13 +153,16 @@ main{
 }
 .fa-clock{
     font-size: 20px;
-    color: #FF4A60; 
+    color:#FF4A60; 
     Width:94.83px;
     Height:29.38px; 
+    text-align: center;
     
 }
 .course-duration{
     background-color: #FFE4E8;
    
     border-radius: 7px;
+    text-align: center;
+    
 }
