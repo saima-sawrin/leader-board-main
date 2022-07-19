@@ -7,6 +7,37 @@ body{
     font-family: 'Poppins', sans-serif;
     background-color: #F3F1FF ;
 }
+
+.nav-bar{
+    display: flex;
+    background-color: #562EFF;
+    justify-content: space-around;
+    
+}
+.ref{
+    display: grid;
+    grid-template-columns: repeat(4 , 1fr);
+    grid-column-gap: 5px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+   
+    
+}
+.reference{
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    
+}
+.profile{
+    height: 51px;
+    width: 51px;
+}
+ .icon img{
+    height: 48px;
+    width: 40px;
+}
 main{
     display: flex;
     justify-content: center;
@@ -98,12 +129,18 @@ main{
 
 /* Latest Courses Section started */
 .courses{
-    display: flex;
+    /* display: flex;
     justify-content: space-between;
     align-items: center; 
-    
+     */
+     
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        flex-direction: column;
+    }
 
-}
+
+
 .Latest{
     background-color: white;
 }
@@ -118,12 +155,15 @@ main{
     font-size: 20.0336px;
 }
 .course{
-    background-color:#FFFFFF;
-    border-radius: 5px;
-    filter: drop-shadow(0px 5.34229px 13.3557px rgba(0, 0, 0, 0.05));
-    height: 269.7856750488281px;
+    
+    background-color:#f5f3f3;
+    border-radius: 8px;
+    filter: drop-shadow(0px 6 14 rgba(0, 0, 0, 0.05));
+    /* height: 269.7856750488281px;
     width: 252.4232177734375px;
-
+   */
+   padding-left: 20px;
+   padding-right:20px;
 
 }
 
@@ -166,3 +206,40 @@ main{
     text-align: center;
     
 }
+.course-banner{
+   display: block;
+   justify-content: center;
+   align-items: center;
+}
+/* responsive */
+/* Mobile Devices*/
+@media only screen and (max-width: 688px){
+    .container{
+        width: 100%;
+    }
+    .players , .blogs , .courses{
+        grid-template-columns: repeat(1,1fr);
+         
+    }
+    .player , .blog ,.course{
+        flex-direction: column;
+        
+    }
+    .players , .courses{
+       justify-items: center;
+       align-items: center;
+    }
+}
+    /* Tablet Devices*/
+    @media only screen and (min-width: 688px) and (max-width:992px)
+    {
+        .container{
+            width: 100%;
+        }
+       .players , .courses{
+        grid-template-columns: repeat(2 , 1fr);
+        
+       }
+    }
+    
+
